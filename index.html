@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kiran Kumari Giri — Software Engineer & Flutter Developer building scalable, cross-platform mobile applications." />
+  <title>Kiran Kumari Giri — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__brand">KG<span>.</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn--sm nav__cta">Let's talk</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow reveal">Software Engineer · Flutter Developer</p>
+      <h1 class="hero__title reveal">
+        I build cross-platform apps<br />that feel <span class="accent">effortless</span>.
+      </h1>
+      <p class="hero__lede reveal">
+        I'm Kiran — a software engineer focused on clean architecture, smooth
+        performance, and interfaces people love to use. From idea to release,
+        I ship reliable mobile products with Flutter &amp; Dart.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#work" class="btn">View my work</a>
+        <a href="assets/Kiran_Resume.pdf" class="btn btn--ghost" download>Download résumé</a>
+      </div>
+      <div class="hero__meta reveal">
+        <span><strong>3+</strong> years building products</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span><strong>Kathmandu</strong>, Nepal</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Available for work</span>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about">
+        <div class="about__body reveal">
+          <p class="about__lead">
+            I'm a software engineer based in Kathmandu, Nepal, currently building
+            scalable mobile applications at Wesionary Team.
+          </p>
+          <p>
+            I care about the full journey of a product — from analysing
+            requirements and shaping a clean architecture, to integrating APIs,
+            managing state, and shipping polished, high-quality releases on time.
+            I enjoy turning complex problems into intuitive, dependable
+            experiences.
+          </p>
+          <p>
+            Alongside app development, I like working with data — building small
+            analysis tools, visualising datasets, and exploring how AI can make
+            everyday workflows faster.
+          </p>
+          <div class="about__facts">
+            <div class="fact">
+              <span class="fact__label">Education</span>
+              <span class="fact__value">BSc Hons Computing, Computer Science</span>
+              <span class="fact__sub">Coventry University · GPA 3.75 · 2019–2022</span>
+            </div>
+            <div class="fact">
+              <span class="fact__label">Based in</span>
+              <span class="fact__value">Kalanki, Kathmandu</span>
+              <span class="fact__sub">Nepal · 44600</span>
+            </div>
+            <div class="fact">
+              <span class="fact__label">Focus</span>
+              <span class="fact__value">Flutter · Clean Architecture</span>
+              <span class="fact__sub">Mobile · APIs · Data</span>
+            </div>
+          </div>
+        </div>
+        <aside class="about__card reveal">
+          <div class="about__avatar" aria-hidden="true">KG</div>
+          <h3>Kiran Kumari Giri</h3>
+          <p class="about__role">Software Engineer</p>
+          <ul class="about__links">
+            <li><a href="mailto:kirankumarigiri58@gmail.com">kirankumarigiri58@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/kiran-kumari-giri/" target="_blank" rel="noopener">linkedin.com/in/kiran-kumari-giri</a></li>
+            <li><a href="https://github.com/kiran22985" target="_blank" rel="noopener">github.com/kiran22985</a></li>
+            <li><a href="tel:+9779808420246">+977 9808420246</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <article class="tl reveal">
+          <div class="tl__meta">
+            <span class="tl__period">Mar 2024 — Present</span>
+            <span class="tl__tag">Current</span>
+          </div>
+          <div class="tl__body">
+            <h3 class="tl__role">Software Engineer</h3>
+            <p class="tl__company">Wesionary Team Co. Ltd</p>
+            <p class="tl__desc">
+              Design and develop scalable mobile applications with Flutter,
+              focusing on clean architecture, performance, and maintainability.
+              Implement new features, integrate RESTful APIs, and manage
+              application state following industry best practices. Collaborate
+              with cross-functional teams to analyse requirements, troubleshoot
+              production issues, and deliver reliable applications on time.
+            </p>
+            <div class="tl__stack">
+              <span>Flutter</span><span>Dart</span><span>REST APIs</span><span>State Management</span>
+            </div>
+          </div>
+        </article>
+        <article class="tl reveal">
+          <div class="tl__meta">
+            <span class="tl__period">Dec 2022 — Jan 2024</span>
+          </div>
+          <div class="tl__body">
+            <h3 class="tl__role">Flutter Developer</h3>
+            <p class="tl__company">Sajilo Ventures Pvt Ltd</p>
+            <p class="tl__desc">
+              Developed and maintained cross-platform mobile applications using
+              Flutter and Dart for Android and iOS. Built responsive, intuitive
+              interfaces, integrated RESTful APIs, and collaborated with backend
+              developers for seamless data flow. Improved performance by
+              debugging issues, raising code quality, and building reusable
+              components alongside designers and QA.
+            </p>
+            <div class="tl__stack">
+              <span>Flutter</span><span>Dart</span><span>Android</span><span>iOS</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Projects -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Selected Work</h2>
+      </div>
+      <div class="work">
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__cat">Mobile · Real Estate</span>
+            <span class="project__date">Dec 2023 — Jan 2024</span>
+          </div>
+          <h3 class="project__title">Property Management App</h3>
+          <p class="project__desc">
+            A cross-platform property management app that lets users buy, sell,
+            and browse real-estate listings. Built property search, detailed
+            listings, user authentication, and REST API integration for a
+            seamless, responsive experience — working with the backend team to
+            keep data management efficient.
+          </p>
+          <div class="project__stack">
+            <span>Flutter</span><span>Dart</span><span>REST API</span><span>Auth</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__cat">Mobile · Booking</span>
+            <span class="project__date">Mar 2024 — Apr 2025</span>
+          </div>
+          <h3 class="project__title">Soudan — Fortune App</h3>
+          <p class="project__desc">
+            A Flutter fortune app where users book tarot readings, counselling,
+            astrology consultations, and other spiritual services. Integrated
+            secure authentication, appointment booking, payment workflows, and
+            real-time notifications, with a focus on an intuitive UI and a smooth
+            booking experience.
+          </p>
+          <div class="project__stack">
+            <span>Flutter</span><span>Payments</span><span>Notifications</span><span>Booking</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__cat">Data · Analytics</span>
+            <span class="project__date">Jul 2023 — Aug 2023</span>
+          </div>
+          <h3 class="project__title">Easysheet — Data Analysis System</h3>
+          <p class="project__desc">
+            A data-analysis platform for manipulating data, generating
+            interactive charts, and visualising datasets. Implemented data
+            import, filtering, sorting, aggregation, and dynamic chart creation,
+            with a user-friendly interface and processing optimised to handle
+            large datasets effectively.
+          </p>
+          <div class="project__stack">
+            <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Data Viz</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toolkit -->
+  <section class="section section--alt" id="toolkit">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Toolkit</h2>
+      </div>
+      <div class="toolkit">
+        <div class="tk reveal">
+          <h3 class="tk__label">Languages</h3>
+          <div class="tk__tags">
+            <span>Python</span><span>JavaScript</span><span>Dart</span>
+          </div>
+        </div>
+        <div class="tk reveal">
+          <h3 class="tk__label">Frameworks</h3>
+          <div class="tk__tags">
+            <span>Flutter</span><span>FastAPI</span><span>Pandas</span><span>Matplotlib</span><span>Next.js</span>
+          </div>
+        </div>
+        <div class="tk reveal">
+          <h3 class="tk__label">Tools</h3>
+          <div class="tk__tags">
+            <span>Power BI</span><span>Excel</span><span>PowerPoint</span><span>Tableau</span><span>MySQL</span><span>SQLite</span>
+          </div>
+        </div>
+        <div class="tk reveal">
+          <h3 class="tk__label">Platforms</h3>
+          <div class="tk__tags">
+            <span>PyCharm</span><span>Jupyter</span><span>VS Code</span><span>IntelliJ IDEA</span>
+          </div>
+        </div>
+        <div class="tk reveal">
+          <h3 class="tk__label">Soft Skills</h3>
+          <div class="tk__tags">
+            <span>Stakeholder Management</span><span>People Management</span><span>Rapport Building</span><span>Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates -->
+      <div class="certs">
+        <h3 class="certs__title reveal">Certifications</h3>
+        <div class="certs__grid">
+          <div class="cert reveal">
+            <span class="cert__date">Mar 2021</span>
+            <h4>Dart &amp; Flutter Bootcamp</h4>
+            <p>Foundations in Dart and Flutter for cross-platform apps — responsive UIs, state management, and API integration.</p>
+          </div>
+          <div class="cert reveal">
+            <span class="cert__date">Jul 2025</span>
+            <h4>FastAPI</h4>
+            <p>Building high-performance RESTful APIs with FastAPI &amp; Python — request validation, database integration, auth, and docs.</p>
+          </div>
+          <div class="cert reveal">
+            <span class="cert__date">Dec 2025</span>
+            <h4>Prompt Engineering</h4>
+            <p>Designing effective prompts for large language models and building AI workflows to boost productivity with generative AI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <div class="section__head reveal">
+        <span class="section__index">05</span>
+        <h2 class="section__title">Contact</h2>
+      </div>
+      <h3 class="contact__headline reveal">Let's build something great together.</h3>
+      <p class="contact__lede reveal">
+        Have a project in mind, a role to fill, or just want to say hi?
+        My inbox is always open.
+      </p>
+      <a href="mailto:kirankumarigiri58@gmail.com" class="contact__email reveal">kirankumarigiri58@gmail.com</a>
+      <div class="contact__socials reveal">
+        <a href="https://www.linkedin.com/in/kiran-kumari-giri/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/kiran22985" target="_blank" rel="noopener">GitHub</a>
+        <a href="tel:+9779808420246">+977 9808420246</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Kiran Kumari Giri</span>
+        <span>Designed &amp; built with care</span>
+      </div>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

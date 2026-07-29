@@ -661,10 +661,27 @@ img { max-width: 100%; display: block; }
 .footer__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
   color: var(--text-mute);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+}
+.footer__top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #06210f;
+  flex-shrink: 0;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.footer__top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -10px var(--accent-soft);
 }
 
 /* ---------- Reveal animation ---------- */

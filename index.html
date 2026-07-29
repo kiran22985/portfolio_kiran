@@ -36,25 +36,87 @@
   <section class="hero" id="home">
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="container hero__inner">
-      <p class="hero__eyebrow reveal">Software Engineer · Mobile Developer</p>
-      <h1 class="hero__title reveal">
-        I build cross-platform apps<br />that feel <span class="accent">effortless</span>.
-      </h1>
-      <p class="hero__lede reveal">
-        I'm Kiran — a software engineer focused on clean architecture, smooth
-        performance, and interfaces people love to use. From idea to release,
-        I ship reliable mobile products with Flutter &amp; Dart.
-      </p>
-      <div class="hero__actions reveal">
-        <a href="#work" class="btn">View my work</a>
-        <a href="resume.pdf" class="btn btn--ghost" download="Kiran_Kumari_Giri_Resume.pdf">Download résumé</a>
+      <div class="hero__copy">
+        <p class="hero__greeting reveal">Hey there! 👋</p>
+        <h1 class="hero__name reveal">I'm Kiran Giri</h1>
+        <p class="hero__role reveal">
+          And I'm <span class="accent" id="roleText"></span><span class="hero__caret" aria-hidden="true"></span>
+        </p>
+        <p class="hero__lede reveal">
+          Passionate about crafting clean, reliable mobile experiences, I build
+          cross-platform apps end to end — from architecture and APIs to the
+          interface people actually use. With a background in software engineering
+          and a focus on performance and maintainability, I turn complex ideas into
+          products that ship and last. Let's build something great together!
+        </p>
+        <div class="hero__socials reveal">
+          <a href="https://www.linkedin.com/in/kiran-kumari-giri-7604871a4/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="https://github.com/kiran22985" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.3-.5-1.5.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+          </a>
+          <a href="mailto:kirankumarigiri58@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+        </div>
+        <div class="hero__actions reveal">
+          <a href="resume.pdf" class="btn" download="Kiran_Kumari_Giri_Resume.pdf">Download Resume</a>
+        </div>
       </div>
-      <div class="hero__meta reveal">
-        <span><strong>3+</strong> years building products</span>
-        <span class="dot" aria-hidden="true"></span>
-        <span><strong>Kathmandu</strong>, Nepal</span>
-        <span class="dot" aria-hidden="true"></span>
-        <span>Available for work</span>
+
+      <!-- Flutter IDE card -->
+      <div class="hero__visual reveal">
+        <div class="devcard">
+          <div class="devcard__head">
+            <span class="devcard__title"><span class="devcard__dot"></span>lib/main.dart · flutter</span>
+            <span class="devcard__badge">HOT&nbsp;RELOAD</span>
+          </div>
+
+          <div class="devcard__steps">
+            <span class="step is-on">Analyze</span>
+            <span class="step-line"></span>
+            <span class="step is-on">Compile</span>
+            <span class="step-line"></span>
+            <span class="step is-live">Build</span>
+            <span class="step-line"></span>
+            <span class="step">Render</span>
+            <span class="step-line"></span>
+            <span class="step">Done</span>
+          </div>
+
+          <div class="devcard__term">
+            <div class="term__bar">
+              <span></span><span></span><span></span>
+              <em>run · flutter</em>
+            </div>
+            <pre class="term__code"><code><span class="tk-kw">class</span> <span class="tk-cls">HeroCard</span> <span class="tk-kw">extends</span> <span class="tk-cls">StatelessWidget</span> {
+  <span class="tk-kw">const</span> <span class="tk-fn">HeroCard</span>({<span class="tk-kw">super</span>.key});
+
+  <span class="tk-anno">@override</span>
+  <span class="tk-cls">Widget</span> <span class="tk-fn">build</span>(<span class="tk-cls">BuildContext</span> context) {
+    <span class="tk-kw">return</span> <span class="tk-cls">Card</span>(
+      child: <span class="tk-cls">Padding</span>(
+        padding: <span class="tk-kw">const</span> <span class="tk-cls">EdgeInsets</span>.<span class="tk-fn">all</span>(<span class="tk-num">16</span>),
+        child: <span class="tk-cls">Text</span>(<span class="tk-str">'Hello, I\'m Kiran 👋'</span>),
+      ),
+    );
+  }
+}</code></pre>
+          </div>
+
+          <div class="devcard__panel">
+            <div class="panel__head">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              <span>Build succeeded</span>
+            </div>
+            <p class="panel__body">Rendered <strong>HeroCard</strong> on Android &amp; iOS in <strong>0.4s</strong>.</p>
+            <div class="panel__meta">
+              <span class="panel__chip">main.dart</span>
+              <span class="panel__ok">✓ hot reloaded</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <a href="#about" class="hero__scroll" aria-label="Scroll down">
@@ -83,7 +145,7 @@
             </li>
             <li>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>
-              <span>BSc Computing · Coventry '22</span>
+              <span>BSc(Hons) Computing · Coventry University</span>
             </li>
           </ul>
         </div>

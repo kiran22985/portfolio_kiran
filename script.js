@@ -76,4 +76,38 @@
   /* ---- Footer year ---- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---- Hero role typewriter ---- */
+  const roleEl = document.getElementById("roleText");
+  if (roleEl) {
+    const roles = ["Software Engineer", "Mobile Developer"];
+    const TYPE = 90;      // ms per character typed
+    const ERASE = 45;     // ms per character erased
+    const HOLD = 1600;    // ms to hold a full word
+    const GAP = 400;      // ms pause before typing next word
+    let r = 0, i = 0, erasing = false;
+
+    function tick() {
+      const word = roles[r];
+      if (!erasing) {
+        roleEl.textContent = word.slice(0, i + 1);
+        i++;
+        if (i === word.length) {
+          erasing = true;
+          return setTimeout(tick, HOLD);
+        }
+        return setTimeout(tick, TYPE);
+      } else {
+        roleEl.textContent = word.slice(0, i - 1);
+        i--;
+        if (i === 0) {
+          erasing = false;
+          r = (r + 1) % roles.length;
+          return setTimeout(tick, GAP);
+        }
+        return setTimeout(tick, ERASE);
+      }
+    }
+    tick();
+  }
 })();

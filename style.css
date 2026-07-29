@@ -16,7 +16,7 @@
   --accent-2: #38bdf8;
   --radius: 16px;
   --radius-sm: 10px;
-  --maxw: 1120px;
+  --maxw: 1320px;
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
@@ -43,7 +43,7 @@ img { max-width: 100%; display: block; }
   width: 100%;
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0 28px;
+  padding: 0 20px;
 }
 
 .accent { color: var(--accent); }
@@ -100,7 +100,7 @@ img { max-width: 100%; display: block; }
 .nav__inner {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 16px 28px;
+  padding: 16px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;

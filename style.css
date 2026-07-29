@@ -3,17 +3,17 @@
    ============================================================ */
 
 :root {
-  --bg: #0b0d10;
-  --bg-alt: #101318;
-  --surface: #161a20;
-  --surface-2: #1c222a;
-  --border: #262d37;
-  --text: #e9edf2;
-  --text-dim: #9aa4b2;
-  --text-mute: #67707d;
-  --accent: #4ade80;
-  --accent-soft: rgba(74, 222, 128, 0.12);
-  --accent-2: #38bdf8;
+  --bg: #04090b;
+  --bg-alt: #071619;
+  --surface: #0c1e21;
+  --surface-2: #123033;
+  --border: #1c3b40;
+  --text: #e9f4f2;
+  --text-dim: #93a8a6;
+  --text-mute: #61787a;
+  --accent: #2dd4bf;
+  --accent-soft: rgba(45, 212, 191, 0.14);
+  --accent-2: #22d3ee;
   --radius: 16px;
   --radius-sm: 10px;
   --maxw: 1320px;
@@ -28,7 +28,11 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--bg);
+  background:
+    radial-gradient(1100px 760px at 88% -8%, rgba(45, 212, 191, 0.16), transparent 58%),
+    radial-gradient(1000px 780px at -5% 105%, rgba(34, 211, 238, 0.12), transparent 55%),
+    linear-gradient(160deg, #04090b 0%, #05171a 55%, #04262a 100%);
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.65;
@@ -93,7 +97,7 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid transparent;
 }
 .nav.scrolled {
-  background: rgba(11, 13, 16, 0.75);
+  background: rgba(4, 12, 14, 0.72);
   backdrop-filter: blur(14px);
   border-bottom-color: var(--border);
 }
@@ -166,8 +170,8 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(600px 400px at 80% 15%, rgba(56, 189, 248, 0.10), transparent 60%),
-    radial-gradient(700px 500px at 15% 85%, rgba(74, 222, 128, 0.10), transparent 60%);
+    radial-gradient(600px 400px at 80% 15%, rgba(34, 211, 238, 0.12), transparent 60%),
+    radial-gradient(700px 500px at 15% 85%, rgba(45, 212, 191, 0.12), transparent 60%);
   z-index: 0;
 }
 .hero__bg::before {
@@ -444,7 +448,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Section shell ---------- */
 .section { padding: 110px 0; position: relative; }
-.section--alt { background: var(--bg-alt); }
+.section--alt { background: rgba(5, 22, 25, 0.55); }
 .section__head {
   display: flex;
   align-items: baseline;
@@ -537,7 +541,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- About (light band, reference layout) ---------- */
 .about-light {
-  --al-bg: var(--bg);
+  --al-bg: transparent;
   --al-text: var(--text);
   --al-dim: var(--text-dim);
   --al-mute: var(--text-mute);
